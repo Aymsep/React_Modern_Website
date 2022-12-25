@@ -1,0 +1,47 @@
+.gallery_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 4rem;
+}
+
+.gallery_container article img {
+    transition:var(--transition);
+    cursor: pointer;
+    border: 10px solid transparent;
+}
+
+.gallery_container article img:hover {
+  border-color: var(--color-primary);
+}
+
+
+.gallery_container article img{
+    border-radius:3rem;
+}
+
+
+
+
+
+
+/****************************MEDIA QUERIES MD****************/
+@media screen and (max-width:1024px) {
+    .gallery_container{
+        grid-template-columns:1fr 1fr;
+        gap: 2rem;
+    }
+    .gallery_container article img{
+        border: 0;
+    }
+}
+
+
+
+
+/****************************MEDIA QUERIES SM****************/
+@media screen and (max-width:600px) {
+    .gallery_container{
+        grid-template-columns:1fr;
+        gap: 2rem;
+    }
+}

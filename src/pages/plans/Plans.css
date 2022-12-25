@@ -1,0 +1,70 @@
+.plans_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+}
+
+
+.plan h3{
+    margin-top:.8rem;
+    text-transform: uppercase;
+    padding: 8px;
+    border-radius: 6rem;
+}
+
+
+
+
+.plan small{
+    margin-bottom:2rem;
+}
+.plan h1{
+    color:var(--color-secondary);
+    display: inline-block;
+}
+.plan h2{
+    color:var(--color-gray-400);
+    display: inline-block;
+}
+
+.plan h2{
+    margin-top:2rem;
+    margin-bottom: .5rem;
+    letter-spacing: 1px;
+}
+.plan p.feature_false{
+    color: var(--color-gray-400);
+}
+
+.plan button{
+    margin-top:3rem;
+    cursor: pointer;
+    background-color: var(--color-secondary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************MEDIA QUERIES MD****************/
+@media screen and (max-width:1024px) {
+    .plans_container{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+/****************************MEDIA QUERIES SM****************/
+@media screen and(max-width:600px) {
+   
+}
